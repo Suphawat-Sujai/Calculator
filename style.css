@@ -24,12 +24,12 @@ body{
     -webkit-backface-filer: blur(5.5px);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(30, 30, 30, 0.1);
-    color: bisque;
-    backdrop-filter: blur(5px);
-    -webkit-backface-filer: blur(5px);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(4px);
+    -webkit-backface-filer: blur(4px);
     background: rgba(255, 255, 255, 0.30);
     border: 1px solid rgba(255, 255, 255, 0);
-    flex-basis: 500px;
+    flex-basis: 400px;
     height: 540px;
     padding: 20px 35px;
 }
@@ -39,12 +39,63 @@ body{
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(255, 255, 255,0.1);
     border-radius: 16px;
     color: black;
-    font-size: 40px;
+    font-size: 35px;
     overflow: auto;
-    padding: 5px 15px;
+    padding: 20px;
     text-align: right;
-    width: 326px
-    ;
+    width: 326px;
+}
+.cal-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.cal-button {
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.cal-button:last-child {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: black;
+    background: #3daae9;
+}
+
+.cal-button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.cal-button:hover {
+    background-color: inherit;
+}
+
+.cal-button:active {
+    background-color: rgb(147, 135, 211);
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
 }
